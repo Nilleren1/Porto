@@ -1,32 +1,76 @@
+body {
+  overflow-x: hidden;
+}
+
 .spacer {
   margin: 2%;
   margin-right: 2vw;
 }
 
 .bg-grey {
-  background-color: #202020 !important;
+  background-color: #222222 !important;
   color: #ffffff !important;
 }
 
-.text-align{
+.bg-grey2 {
+  background-color: #1d1d1d !important;
+  color: #ffffff !important;
+}
+
+.text-align {
   text-align: center;
 }
 
-h1{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Libre Baskerville", serif;
+}
+
+h1 {
   margin: 0;
   font-size: 65px !important;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
+}
+h2 {
+  margin: 0;
+  font-size: 40px !important;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
+}
+h3 {
+  margin: 0;
+  font-size: 30px !important;
+  font-family: "Libre Baskerville", serif;
   font-weight: 600;
 }
 
-.description{
+.col,
+.row,
+.container-fluid {
+  width: 100%;
+}
+
+.full-width {
+  width: 100vw;
+}
+
+.description {
   font-size: 30px;
-  width: 35vw;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+}
+.description-smaller {
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 100;
 }
 
-small{
+small {
   font-size: 20px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

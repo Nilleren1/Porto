@@ -24,8 +24,8 @@
 </head>
 
 <body>
-    <div class="container-fluid bg-grey">
-        <div class="row">
+    <div class="container-fluid p-0">
+        <div class="row m-0">
             <div class="col-6 bg-grey d-flex align-items-start">
                 <div class="spacer">
                     <h1>Nicolai</h1>
@@ -35,7 +35,7 @@
                             Hej, jeg hedder Nicolai, og denne side fungerer som en <em>digital
                                 portefølje</em>, hvor du kan udforske:<br><br>
                         <ul>
-                            <li>Mit CV</li>
+                            <li>Curriculum Vitae</li>
                             <li>Kodningsprojekter</li>
                             <li>Lidt om mig som professionel.</li>
                         </ul> <br>Jeg er altid åben for nye muligheder, så tøv
@@ -44,29 +44,188 @@
                         <br>
                         <br>
                         </p>
-                        <small class="small">(Denne side er ikke lavet med mobile-first approach.)</small>
+                        <small class="small">(Denne side er ikke lavet mobile-first.)</small>
                     </div>
-                    
+
                 </div>
 
                 <div>
-                    <img class="small-portrait mt-3" src="/img/portræt_småt.png" alt="small-portrait">
+                    <img class="small-portrait mt-3" src="/img/portræt_småt.webp" alt="small-portrait">
                 </div>
             </div>
-            <div class="col-6 img-container p-0 m-0">
-                <img class="img-bg" src="/img/baggrund.png" alt="sejt">
+            <!-- ToDo: change links -->
+            <div id="menu" class="col-6 img-container p-0 m-0">
+                <img class="img-bg" src="/img/bg.webp" alt="sejt">
                 <div class="menu-frame-container">
                     <img src="/svg/Frame and icons.svg" alt="menu-frame">
-                    <a href="/pages/projects/projects.html" class="button-1">Projekter</a>
-                    <a href="/pages/contact/contact.html" class="button-2">Kontakt</a>
-                    <a href="/pages/CV/cv.html" class="button-3">CV</a>
-                    <a href="/pages/about me/aboutMe.html" class="button-4">Om Mig</a>
+                    <a href="#projekter" class="button-1">Projekter</a>
+                    <a href="#kontakt" class="button-2">Kontakt</a>
+                    <a href="#cv" class="button-3">CV</a>
+                    <a href="#om-mig" class="button-4">Om Mig</a>
 
                 </div>
             </div>
         </div>
 
-    </div>
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example">
+            <div class="bg-grey2" style="height: 100vh;">
+                <div class="row justify-content-center align-items-center full-width">
+                    <div class="col text-align mt-4 mb-5">
+                        <h1>Om Mig</h1>
+                    </div>
+                </div>
+                <div class="row bg-grey2 d-flex justify-content-center align-items-center p-0 m-0">
+                    <div class="col-sm-5 p-0 m-0">
+                        <p class="description p-1 m-1 text-align">
+                            Jeg har fulgt en professionsuddannelse som datamatiker ved Zeland
+                            Erhvervsakademi. Da jeg altid har haft en passion for at lære nye
+                            ting, besluttede jeg mig for at fortsætte med en professionsbachelor
+                            i webudvikling, som jeg i øjeblikket er i gang med.
+                        </p>
+                        <img class="img-container-small p-0" src="/img/graduate2.webp" alt="graduation">
+                    </div>
+                    <div class=" col-sm-2 col-md-0 col-lg-0 text-center">
+                        <br><br><br>
+                        <a href="#menu"><img class="hoverback" src="/svg/Up.svg"></a>
+                    </div>
+                    <div class="col-sm-5 p-0 m-0">
+                        <p class="description p-1 m-1 text-align">
+                            Jeg vil beskrive mig selv som en afslappet person, nem at omgås.
+                            Indtil nu har jeg ikke haft problemer med at kommunikere effektivt
+                            med kollegaer og medstuderende og dermed opnå et godt
+                            samarbejde. Jeg har et stærkt engagement i at give en ekstra indsats for
+                            et projekt.
+                        </p>
+                        <img style="float: right;" class="img-container-small p-0" src="/img/graduate1.webp"
+                            alt="graduation">
+                    </div>
+                </div>
+            </div>
+            <div id="om-mig" class="container-fluid bg-grey">
+                <div class="row">
+                    <div class="col-sm">
+                        <h1 class="text-align mt-4 mb-5">Projekter</h1>
+                    </div>
+                </div>
+                <div class="row ">
+                    <h2 class="text-align mb-3">Skole Projekter</h2>
+                    <br><br><br>
+                    <div class="col-sm-6 text-align">
+
+                        <h3>Smart Postkasse</h3>
+                        <p class="description-smaller">Smart Postkasse er et projekt, som jeg har lavet sammen med en
+                            gruppe
+                            på 4 personer. Projektet
+                            gik ud på at lave en postkasse som kunne give besked når man modtagede post vha. raspberry
+                            pi
+                            sensor. Det lykkedes også at få den til at give en besked på hvor fyldt den var.
+                            <br>
+                            C#, .NET, Python, JavaScript.
+                            <br>
+                            <a href="https://github.com/sebastianlinnet/YouGotMailFrontEnd">Github Frontend</a>
+                            <br>
+                            <a href="https://github.com/MikRas95/YouGotMailAPI">Github API</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 text-align">
+                        <img class="img-project p-0" src="/img/postkasse.webp" alt="postkasse">
+                    </div>
+                </div>
+                <br><br><br>
+                <div id="projekter" class="row">
+
+                    <div class="col-sm-6 text-align">
+                        <img class="img-project p-0" style="height: 35vh; width: auto;" src="/img/coop bank_lån.webp"
+                            alt="postkasse">
+                    </div>
+                    <div class="col-sm-6 text-align">
+
+                        <h3>Coop Bank delvis indlæsning</h3>
+                        <p class="description-smaller">Som afsluttende projekt på datamatiker uddannelsen, har jeg i en
+                            gruppe været med til at kigge på noget indlæsning i en del af coop banks applikation.
+                            Vi satte os ind i deres system og fandt ud af hvordan vi kunne lave en delvis indlæsning af
+                            data
+                            i deres ansøgnings-håndteringssystem. Det endte med at spare nogle få sekunder, som kan
+                            spare en del tid i længden.<br>
+                            C#, .NET, SQL, winforms.
+                            <br>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="container-fluid bg-grey2">
+                <br><br><br>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-align mt-4 mb-5">CV</h1>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 text-align">
+
+                        <br>
+
+                    </div>
+                    <div class="col-4 text-align">
+                        <h2>(Under udvikling)</h2>
+                        <br><br><br>
+                    </div>
+                    <div class="col-4 text-align"> </div>
+                </div>
+            </div>
+
+            <div id="cv" class="container-fluid bg-grey">
+                <br><br><br>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-align mt-4 mb-5">Kontakt</h1>
+                    </div>
+                </div>
+                <div class="row p-5">
+                    <div class="col-4" style="text-align: start;">
+                        <h2>kontaktinformation</h2>
+                        <br>
+                        <h3>Email</h3>
+                        <h4>nicolai.hoegsbjerg@gmail.com</h4>
+                        <br>
+                        <h3>Telefon</h3>
+                        <h4>+45 28 49 08 01</h4>
+                        <br>
+                        <h3>Adresse</h3>
+                        <h4>Danmark, Sjaelland Roskilde</h4>
+                    </div>
+                    <div class="col-4 text-align">
+                        <h2>Links/Platforms</h2>
+                        <br>
+                        <h3>LinkedIn</h3>
+                        <a href="https://linkedin.com/in/nicolai-høgsbjerg">
+                            <h4>linkedin.com/in/nicolai-høgsbjerg</h4>
+                        </a>
+                        <br>
+                        <h3>Github</h3>
+                        <a href="https://www.github.com/Nilleren1">
+                            <h4>github.com/Nilleren1</h4>
+                        </a>
+                        <br>
+                        <h3>Facebook</h3>
+                        <a href="https://www.facebook.com/nico646c">
+                            <h4>facebook.com/nico646c</h4>
+                        </a>
+                        <br><br><br>
+                        <a href="#menu"><img class="hoverback" src="/svg/Up.svg"></a>
+                    </div>
+                    <div class="col-4 text-align">
+                        <img src="/img/portræt_stort.webp">
+                    </div>
+                </div>
+                <div id="kontakt"></div>
+            </div>
+
+        </div>
 </body>
 
 </html>

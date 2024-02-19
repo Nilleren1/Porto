@@ -1,13 +1,24 @@
-
 .img-bg {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .img-container {
   height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+
+.img-container-small {
+  width: 40vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-project {
+  width: 50%;
   overflow: hidden;
 }
 
@@ -25,7 +36,7 @@
   left: 309px; /* Adjust as needed */
   font-size: 36px;
   color: #000000;
-  font-family: 'Nixie One', system-ui;
+  font-family: "Nixie One", system-ui;
 }
 
 .button-2 {
@@ -34,7 +45,7 @@
   left: 322px; /* Adjust as needed */
   font-size: 36px;
   color: #000000;
-  font-family: 'Nixie One', system-ui;
+  font-family: "Nixie One", system-ui;
 }
 .button-3 {
   position: absolute;
@@ -42,7 +53,7 @@
   left: 173px; /* Adjust as needed */
   font-size: 36px;
   color: #000000;
-  font-family: 'Nixie One', system-ui;
+  font-family: "Nixie One", system-ui;
 }
 .button-4 {
   position: absolute;
@@ -50,38 +61,45 @@
   left: 498px; /* Adjust as needed */
   font-size: 36px;
   color: #000000;
-  font-family: 'Nixie One', system-ui;
+  font-family: "Nixie One", system-ui;
 }
 
-.small-portrait{
+.small-portrait {
   height: 20vh;
   max-height: 100%;
   margin: 2%;
 }
 
+
+.hoverback {
+  
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for background color and text color change */
+}
+
+.hoverback:hover {
+  transform: scale(1.15); /* Scale to 110% on hover */
+}
+
 /* CSS for the hover effect */
 a {
-    position: relative;
-    color: #333; /* Default color */
-    text-decoration: none !important; /* Remove underline */
-    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and font size change */
+  position: relative;
+  color: #333; /* Default color */
+  text-decoration: none !important; /* Remove underline */
+  transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and font size change */
 }
 
 a::before {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #202020; /* Line color */
-    transform: scaleX(0); /* Initial scale of 0 */
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #202020; /* Line color */
+  transform: scaleX(0); /* Initial scale of 0 */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
 
 a:hover::before {
-    transform: scaleX(1); /* Scale to full width on hover */
+  transform: scaleX(1); /* Scale to full width on hover */
 }
-
-
-
